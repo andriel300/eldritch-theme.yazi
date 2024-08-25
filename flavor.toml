@@ -30,10 +30,10 @@ bright_red = "#f0313e"
 # : Manager {{{
 
 [manager]
-cwd = { fg = "#04d1f9", underline = true}
+cwd = { fg = "#04d1f9"}
 
 # Hovered
-hovered = { bg = "#323449", underline = true  }
+hovered = { fg = "#37f499", bg = "#323449", underline = true  }
 preview_hovered = { underline = true }
 
 # Find
@@ -48,7 +48,7 @@ marker_selected = { fg = "#f7c67f", bg = "#f7c67f" }
 
 # Tab
 tab_active = { bg = "#212338", fg = "#10A1BD" }
-tab_inactive = {}
+tab_inactive = { fg = "#ABB4DA", bg = "#292e42" }
 tab_width    = 1
 
 # Count
@@ -89,6 +89,10 @@ permissions_s = { fg = "#76639e" }
 
 # : }}}
 
+# Preview Position
+
+folder_offset = [2, 0, 2, 0]
+preview_offset = [4, 4, 4, 4]
 
 # : Select {{{
 
@@ -180,7 +184,7 @@ rules = [
 
 	# Fallback
 	{ name = "*", fg = "#ebfafa" },
-	{ name = "*/", fg = "#37f499" },
+	{ name = "*/", fg = "#a48cf2" },
 
     # Special files
 	{ name = "*", is = "orphan", bg = "#f0313e" },
