@@ -30,10 +30,10 @@ bright_red = "#f0313e"
 # : Manager {{{
 
 [manager]
-cwd = { fg = "#04d1f9" }
+cwd = { fg = "#04d1f9", underline = true}
 
 # Hovered
-hovered         = { reversed = true }
+hovered = { bg = "#323449", underline = true  }
 preview_hovered = { underline = true }
 
 # Find
@@ -41,13 +41,13 @@ find_keyword  = { fg = "#37f499", bold = true, italic = true, underline = true }
 find_position = { fg = "#f265b5", bg = "reset", bold = true, italic = true }
 
 # Marker
-marker_copied   = { fg = "#37f499", bg = "#37f499" }
+marker_copied   = { fg = "#a48cf2", bg = "#a48cf2" }
 marker_cut      = { fg = "#f16c75", bg = "#f16c75" }
 marker_marked   = { fg = "#76639e", bg = "#76639e" }
 marker_selected = { fg = "#f7c67f", bg = "#f7c67f" }
 
 # Tab
-tab_active   = { reversed = true }
+tab_active = { bg = "#212338", fg = "#10A1BD" }
 tab_inactive = {}
 tab_width    = 1
 
@@ -189,10 +189,8 @@ rules = [
 	# Dummy files
 	{ name = "*", is = "dummy", bg = "#f16c75" },
 	{ name = "*/", is = "dummy", bg = "#f16c75" },
-
-	# Fallback
-	# { name = "*", fg = "white" },
-	{ name = "*/", fg = "#10A1BD" }
 ]
 
 # : }}}
+
+# Fallback
